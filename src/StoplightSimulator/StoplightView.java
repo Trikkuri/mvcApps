@@ -1,9 +1,8 @@
 package StoplightSimulator;
 
-import mvc.*;
 import java.awt.*;
 
-public class StoplightView extends View {
+public class StoplightView {
 
     public StoplightView(Stoplight light) {
         super(light);

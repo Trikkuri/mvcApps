@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57b60ba3-2a60-41e4-b968-7d80b46c167b" name="Changes" comment="Added a class">
-      <change afterPath="$PROJECT_DIR$/src/StoplightSimulator/ChangeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StoplightSimulator/StopLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StoplightSimulator/StoplightFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StoplightSimulator/StoplightPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StoplightSimulator/StoplightShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StoplightSimulator/StoplightView.java" afterDir="false" />
+    <list default="true" id="57b60ba3-2a60-41e4-b968-7d80b46c167b" name="Changes" comment="Added StoplightSimulator">
+      <change afterPath="$PROJECT_DIR$/src/mvc/AppFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mvc/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mvc/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoplightSimulator/StoplightView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoplightSimulator/StoplightView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/AppPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/AppPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -71,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710184684841</updated>
-      <workItem from="1710184685910" duration="1883000" />
+      <workItem from="1710184685910" duration="3467000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <option name="closed" value="true" />
@@ -89,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710190871648</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added StoplightSimulator">
+      <option name="closed" value="true" />
+      <created>1710191689355</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710191689355</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
     <MESSAGE value="Added a class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a class" />
+    <MESSAGE value="Added StoplightSimulator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added StoplightSimulator" />
   </component>
 </project>
