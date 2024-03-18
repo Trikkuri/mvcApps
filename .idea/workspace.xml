@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57b60ba3-2a60-41e4-b968-7d80b46c167b" name="Changes" comment="Added StoplightSimulator">
-      <change afterPath="$PROJECT_DIR$/src/mvc/AppFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mvc/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mvc/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoplightSimulator/StopLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoplightSimulator/Stoplight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoplightSimulator/StoplightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoplightSimulator/StoplightPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoplightSimulator/StoplightShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoplightSimulator/StoplightShape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StoplightSimulator/StoplightView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoplightSimulator/StoplightView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mvc/AppPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/AppPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2dYUp3KLqF0vvo2EuRHYjb4zXKJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -41,6 +43,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.StoplightPanel.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -59,7 +62,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
   </component>
@@ -72,6 +75,8 @@
       <option name="presentableId" value="Default" />
       <updated>1710184684841</updated>
       <workItem from="1710184685910" duration="3467000" />
+      <workItem from="1710749679197" duration="673000" />
+      <workItem from="1710756241109" duration="475000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <option name="closed" value="true" />

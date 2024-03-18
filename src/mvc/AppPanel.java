@@ -1,5 +1,7 @@
 package mvc;
 
+import StoplightSimulator.Stoplight;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -17,11 +19,22 @@ public class AppPanel extends JPanel implements Subscriber, ActionListener  {
 
     public AppPanel(AppFactory factory) {
 
-        // initialize fields here
+        this.factory = factory;
+        this.model = factory.makeModel();
+        this.view = factory.makeView(model);
+        this.model.subscribe(view);
+
+        controlPanel = new JPanel();
+        controlPanel.setBackground(Color.PINK);
+
+        view.setBackground(Color.GRAY);
 
         frame = new SafeFrame();
-        Container cp = frame.getContentPane();
-        cp.add(this);
+        frame.setLayout(new GridLayout(1, 2));
+        frame.add(controlPanel);
+        frame.add(view);
+        view.setPreferredSize(new Dimension(FRAME_WIDTH / 2, FRAME_HEIGHT));
+        controlPanel.setPreferredSize(new Dimension(FRAME_WIDTH / 2, FRAME_HEIGHT));
         frame.setJMenuBar(createMenuBar());
         frame.setTitle(factory.getTitle());
         frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
@@ -67,6 +80,10 @@ public class AppPanel extends JPanel implements Subscriber, ActionListener  {
 
             if (cmmd.equals("Save")) {
                 Utilities.save(model, false);
+            } else if (cmmd.equals("Change")) {
+                if (model instanceof Stoplight) {
+                    ((Stoplight) model).change();
+                }
             } else if (cmmd.equals("SaveAs")) {
                 Utilities.save(model, true);
             } else if (cmmd.equals("Open")) {

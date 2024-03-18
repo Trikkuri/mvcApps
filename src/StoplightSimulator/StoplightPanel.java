@@ -11,6 +11,7 @@ public class StoplightPanel extends AppPanel {
     public StoplightPanel(AppFactory factory) {
         super(factory);
         change = new JButton("Change");
+        change.setActionCommand("Change");
         change.addActionListener(this);
         controlPanel.add(change);
     }
