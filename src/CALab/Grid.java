@@ -26,8 +26,22 @@ public abstract class Grid extends Model {
     protected void populate() {
         for (int row = 0; row < dim; row++) {
             for (int col = 0; col < dim; col++) {
-                cells[row][col] = makeCell(false); // Replace with your actual implementation
-                cells[row][col].setNeighbors(getNeighbors(cells[row][col], 1));
+                cells[row][col] = makeCell(false);
+                if (cells[row][col] == null) {
+                    System.out.println("Null cell created at position: " + row + ", " + col);
+                }
+            }
+        }
+
+        for (int row = 0; row < dim; row++) {
+            for (int col = 0; col < dim; col++) {
+                Cell asker = cells[row][col];
+                if (asker == null) {
+                    System.out.println("Cell is null before getting neighbors at: " + row + ", " + col);
+                } else {
+                    Set<Cell> neighborCells = getNeighbors(asker, 1); // Example radius
+                    // further processing...
+                }
             }
         }
     }
@@ -49,10 +63,17 @@ public abstract class Grid extends Model {
 
     public Set<Cell> getNeighbors(Cell asker, int radius) {
         Set<Cell> neighbors = new HashSet<>();
-        for (int i = asker.getRow() - radius; i <= asker.getRow() + radius; i++) {
-            for (int j = asker.getCol() - radius; j <= asker.getCol() + radius; j++) {
-                if (i >= 0 && i < dim && j >= 0 && j < dim && (i != asker.getRow() || j != asker.getCol())) {
-                    neighbors.add(cells[i][j]);
+        int askerRow = asker.getRow();
+        int askerCol = asker.getCol();
+
+        for (int i = askerRow - radius; i <= askerRow + radius; i++) {
+            for (int j = askerCol - radius; j <= askerCol + radius; j++) {
+                // Check boundaries of the grid
+                if (i >= 0 && i < dim && j >= 0 && j < dim) {
+                    // Exclude the asker cell itself from the neighbors
+                    if (!(i == askerRow && j == askerCol)) {
+                        neighbors.add(cells[i][j]);
+                    }
                 }
             }
         }

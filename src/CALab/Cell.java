@@ -17,6 +17,7 @@ abstract class Cell extends Publisher implements Serializable {
         this.row = row;
         this.col = col;
         this.myGrid = grid;
+        this.status = 0;
     }
 
     public Color getColor() {
@@ -41,6 +42,11 @@ abstract class Cell extends Publisher implements Serializable {
 
     public int getCol() {
         return col;
+    }
+
+    public void setPosition(int row, int col) {
+        this.row = row;
+        this.col = col;
     }
 
     public int getStatus() {

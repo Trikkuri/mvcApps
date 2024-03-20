@@ -1,6 +1,7 @@
 package mvc;
 
 import StoplightSimulator.Stoplight;
+import CALab.GridFactory;
 
 import java.awt.*;
 import java.awt.event.*;

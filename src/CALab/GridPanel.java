@@ -42,4 +42,10 @@ public class GridPanel extends AppPanel {
             command.execute();
         }
     }
+
+    public static void main(String[] args) {
+        AppFactory factory = new GridFactory();
+        AppPanel panel = new GridPanel(factory);
+        panel.display(); // Show the application window
+    }
 }

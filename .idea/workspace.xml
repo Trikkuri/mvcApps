@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57b60ba3-2a60-41e4-b968-7d80b46c167b" name="Changes" comment="Added classes for CALab">
+    <list default="true" id="57b60ba3-2a60-41e4-b968-7d80b46c167b" name="Changes" comment="I dont know what Im doing for CALAB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CALab/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CALab/ClearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/ClearCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CALab/GrCellView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/CellView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CALab/CellView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/CellView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CALab/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CALab/GridFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/GridFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CALab/GridPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/GridPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CALab/GridView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/GridView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CALab/PopulateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/PopulateCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CALab/RunCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/RunCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/AppPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/AppPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,24 +40,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.StoplightPanel.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GridPanel.executor": "Run",
+    "Application.StoplightPanel.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -80,7 +78,8 @@
       <workItem from="1710749679197" duration="673000" />
       <workItem from="1710756241109" duration="693000" />
       <workItem from="1710832150056" duration="828000" />
-      <workItem from="1710892201050" duration="7665000" />
+      <workItem from="1710892201050" duration="9937000" />
+      <workItem from="1710918280803" duration="3921000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <option name="closed" value="true" />
@@ -122,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710899247456</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="I dont know what Im doing for CALAB">
+      <option name="closed" value="true" />
+      <created>1710903599675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710903599675</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +141,7 @@
     <MESSAGE value="Added StoplightSimulator" />
     <MESSAGE value="Got StoplightSimulator to work!" />
     <MESSAGE value="Added classes for CALab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added classes for CALab" />
+    <MESSAGE value="I dont know what Im doing for CALAB" />
+    <option name="LAST_COMMIT_MESSAGE" value="I dont know what Im doing for CALAB" />
   </component>
 </project>
