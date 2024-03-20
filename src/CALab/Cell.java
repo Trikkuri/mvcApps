@@ -5,7 +5,7 @@ import java.io.*;
 import java.awt.Color;
 import mvc.*;
 
-abstract class Cell extends Publisher implements Serializable {
+public abstract class Cell extends Publisher implements Serializable {
 
     protected int row = 0, col = 0;
     protected Set<Cell> neighbors = new HashSet<Cell>();
