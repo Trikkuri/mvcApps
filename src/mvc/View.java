@@ -13,7 +13,7 @@ public abstract class View extends JPanel implements Subscriber {
 
     public void setModel(Model model) {
         this.model = model;
-        update();  // Assuming update is a method to refresh the view
+        update();
     }
 
     @Override
