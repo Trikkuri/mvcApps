@@ -4,12 +4,7 @@ import mvc.*;
 
 public class GridFactory implements AppFactory {
 
-    public Model makeModel() { return new Grid() {
-        @Override
-        public Cell makeCell(boolean uniform) {
-            return null;
-        }
-    }; }
+    public Model makeModel() { return new Grid(); }
 
     public View makeView(Model m) { return new GridView(m); }
 
