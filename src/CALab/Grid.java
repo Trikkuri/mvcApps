@@ -34,12 +34,16 @@ public abstract class Grid extends Model {
 
     // called when Populate and clear buttons are clicked
     public void repopulate(boolean randomly) {
-        if (randomly) {
-            // randomly set the status of each cell
-        } else {
-            // set the status of each cell to 0 (dead)
+        for (int row = 0; row < dim; row++) {
+            for (int col = 0; col < dim; col++) {
+                if (randomly) {
+                    cells[row][col].reset(true); // Reset cell with random state
+                } else {
+                    cells[row][col].reset(false); // Reset cell to initial state
+                }
+            }
         }
-        // notify subscribers
+        notifySubscribers();
     }
 
 
@@ -60,14 +64,28 @@ public abstract class Grid extends Model {
 
     public void observe() {
         // call each cell's observe method and notify subscribers
+        for (Cell[] row : cells) {
+            for (Cell cell : row) {
+                cell.observe();
+            }
+        }
+        notifySubscribers();
     }
 
     public void interact() {
-        // ???
+        for (Cell[] row : cells) {
+            for (Cell cell : row) {
+                cell.interact();
+            }
+        }
     }
 
     public void update() {
-        // ???
+        for (Cell[] row : cells) {
+            for (Cell cell : row) {
+                cell.update();
+            }
+        }
     }
 
     public void updateLoop(int cycles) {

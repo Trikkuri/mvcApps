@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57b60ba3-2a60-41e4-b968-7d80b46c167b" name="Changes" comment="Got StoplightSimulator to work!">
-      <change afterPath="$PROJECT_DIR$/src/CALab/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CALab/ClearCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CALab/GrCellView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CALab/Grid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CALab/GridFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CALab/GridPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CALab/GridView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CALab/PopulateCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CALab/RunCommand.java" afterDir="false" />
+    <list default="true" id="57b60ba3-2a60-41e4-b968-7d80b46c167b" name="Changes" comment="Added classes for CALab">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mvc/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CALab/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CALab/ClearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/ClearCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CALab/GrCellView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/CellView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CALab/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CALab/GridFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/GridFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CALab/GridPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/GridPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CALab/GridView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/GridView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CALab/PopulateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/PopulateCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CALab/RunCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CALab/RunCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <workItem from="1710749679197" duration="673000" />
       <workItem from="1710756241109" duration="693000" />
       <workItem from="1710832150056" duration="828000" />
-      <workItem from="1710892201050" duration="3436000" />
+      <workItem from="1710892201050" duration="7665000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <option name="closed" value="true" />
@@ -115,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710756755769</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added classes for CALab">
+      <option name="closed" value="true" />
+      <created>1710899247456</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710899247456</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +133,7 @@
     <MESSAGE value="Added a class" />
     <MESSAGE value="Added StoplightSimulator" />
     <MESSAGE value="Got StoplightSimulator to work!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got StoplightSimulator to work!" />
+    <MESSAGE value="Added classes for CALab" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added classes for CALab" />
   </component>
 </project>
