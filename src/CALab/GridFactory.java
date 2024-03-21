@@ -35,11 +35,11 @@ public class GridFactory implements AppFactory {
     public String getTitle() { return "Cellular Automaton Lab"; }
 
     public String[] getHelp() {
-        return new String[] {"Help message..."}; // Provide relevant help text
+        return new String[] {"Run = cycles | Clear = clear board | Populate = randomly populate board"}; // Provide relevant help text
     }
 
     public String about() {
-        return "About Cellular Automaton Lab..."; // Provide about text
+        return "Cellular Automaton Lab/Conway's game of Life"; // Provide about text
     }
 }
 
