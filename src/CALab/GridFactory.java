@@ -1,10 +1,15 @@
 package CALab;
 
 import mvc.*;
+import LifeLab.*;
 
 public class GridFactory implements AppFactory {
 
-    public Model makeModel() { return new Grid(); }
+    public Model makeModel() {
+        // Ensure you have a 'dim' value or use a default value
+        int dim = 20; // or whatever default dimension you want
+        return new Society(dim);
+    }
 
     public View makeView(Model m) { return new GridView(m); }
 
@@ -37,3 +42,4 @@ public class GridFactory implements AppFactory {
         return "About Cellular Automaton Lab..."; // Provide about text
     }
 }
+

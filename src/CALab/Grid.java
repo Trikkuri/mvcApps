@@ -13,7 +13,7 @@ public abstract class Grid extends Model {
     public int getDim() { return dim; }
     public int getTime() { return time; }
     public Cell getCell(int row, int col) { return cells[row][col]; }
-    public abstract Cell makeCell(boolean uniform);
+    public abstract Cell makeCell(int row, int col, boolean uniform);
 
 
     public Grid(int dim) {
@@ -24,24 +24,26 @@ public abstract class Grid extends Model {
     public Grid() { this(20); }
 
     protected void populate() {
+        boolean uniform = false; // Or some logic to decide this
         for (int row = 0; row < dim; row++) {
             for (int col = 0; col < dim; col++) {
-                cells[row][col] = makeCell(false);
-                if (cells[row][col] == null) {
-                    System.out.println("Null cell created at position: " + row + ", " + col);
+                Cell cell = makeCell(row, col, uniform);
+                if (cell == null) {
+                    throw new IllegalStateException("Cell creation failed at position: " + row + ", " + col);
                 }
+                cells[row][col] = cell;
             }
         }
 
         for (int row = 0; row < dim; row++) {
             for (int col = 0; col < dim; col++) {
-                Cell asker = cells[row][col];
-                if (asker == null) {
-                    System.out.println("Cell is null before getting neighbors at: " + row + ", " + col);
-                } else {
-                    Set<Cell> neighborCells = getNeighbors(asker, 1); // Example radius
-                    // further processing...
+                Cell cell = cells[row][col];
+                if (cell == null) {
+                    System.out.println("Cell is null at position: " + row + ", " + col);
+                    continue;
                 }
+                Set<Cell> neighborCells = getNeighbors(cell, 1); // Example radius
+                cell.setNeighbors(neighborCells);
             }
         }
     }
@@ -66,15 +68,10 @@ public abstract class Grid extends Model {
         int askerRow = asker.getRow();
         int askerCol = asker.getCol();
 
-        for (int i = askerRow - radius; i <= askerRow + radius; i++) {
-            for (int j = askerCol - radius; j <= askerCol + radius; j++) {
-                // Check boundaries of the grid
-                if (i >= 0 && i < dim && j >= 0 && j < dim) {
-                    // Exclude the asker cell itself from the neighbors
-                    if (!(i == askerRow && j == askerCol)) {
-                        neighbors.add(cells[i][j]);
-                    }
-                }
+        for (int i = Math.max(askerRow - radius, 0); i <= Math.min(askerRow + radius, dim - 1); i++) {
+            for (int j = Math.max(askerCol - radius, 0); j <= Math.min(askerCol + radius, dim - 1); j++) {
+                if (i == askerRow && j == askerCol) continue; // Skip the asker cell itself
+                neighbors.add(cells[i][j]);
             }
         }
         return neighbors;
@@ -120,4 +117,5 @@ public abstract class Grid extends Model {
         }
     }
 }
+
 
